@@ -85,6 +85,8 @@ function handleCardClick(event) {
       card1.removeEventListener('click', handleCardClick)
       card2.removeEventListener('click', handleCardClick)
       stay = false;
+      card1 = null
+      card2 = null
     } else {
       setTimeout(function () {
         card1.style.backgroundColor = "";
